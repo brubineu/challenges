@@ -1,0 +1,45 @@
+/**
+* SITE STYLE TEMPLATE
+**/
+
+/* /!/ GLOBAL SETTINGS /!/ */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* < LINK HOVER > */
+a {
+    transition: all ease-in 0.7s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+    transition: all ease-in-out 0.3s;
+}
+
+/* < WRAP > */
+.page-wrap {
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* /!/ RESOLUTION /!/ */
+
+/* < TABLET > */
+@media only screen and (min-width: 768px) {
+    .page-wrap {
+        background-color: white;
+    }
+}
+
+/* < COMPUTER > */
+@media only screen and (min-width: 1000px) {
+    .page-wrap {
+        width: 1000px;
+    }
+}
