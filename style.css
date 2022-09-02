@@ -94,20 +94,9 @@ main {
 footer {
     width: 100%;
     padding: 25px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "section-1 section-2";
+    display: flex;
     background-color: black;
     color: white;
-}
-
-.section-1 {
-    grid-area: section-1;
-}
-
-.section-2 {
-    grid-area: section-2;
 }
 
 footer .section-1 ul {
@@ -115,8 +104,7 @@ footer .section-1 ul {
 }
 
 footer .section-2 ul {
-    margin-right: 70px;
-    padding-left: 30px;
+    margin-left: 160px;
 }
 
 footer section ul li {
@@ -164,7 +152,7 @@ footer section ul li h3 {
         border-radius: 3px;
     }
 
-    /* < FOOTER > */
+    /* < FOOTER > (desktop & tablet resolution) */
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -179,10 +167,9 @@ footer section ul li h3 {
     }
 
     footer .section-2 ul {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: start;
-        justify-content: center;
+        display: inline-flex;
+        float: right;
+        margin-right: 70px;
     }
 
     footer section ul li {
